@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Navbar';
+import Home from './Home';
 
 function App() {
   const title = 'Welcome to new blog'
@@ -9,16 +11,10 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar/>
+      
       <div className="content">
-        <h1> {title}</h1>
-        <p>Liked {likes}</p>
-
-        <p>{10}</p>
-        <p>{"hello, ninjas"}</p>
-        <p>{[1,2,3,4,5,6]}</p>
-        <p>{Math.random()*10}</p>
-
-        <a href={link}>Google site</a>
+        <Home/> 
       </div>
     </div>
   );
